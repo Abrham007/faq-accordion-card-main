@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(hsl(273, 75%, 66%, 0.5), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(237, 12%, 33%);
+}
+
+main {
+  background: url(../images/illustration-woman-online-desktop.svg) no-repeat -90px,
+    url(../images/bg-pattern-desktop.svg) no-repeat -600px -300px;
+  background-color: white;
+  width: 900px;
+  height: 500px;
+  border-radius: 25px;
+  position: relative;
+}
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100px;
+  right: 50%;
+  background: url(../images/illustration-box-desktop.svg) no-repeat 0px 205px;
+  z-index: 1;
+}
+.acc-con {
+  position: absolute;
+  left: 450px;
+  top: 60px;
+  width: 400px;
+}
+h1 {
+  color: hsl(238, 29%, 16%);
+  margin-bottom: 25px;
+  z-index: 1;
+}
+.acc-div {
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+img {
+  float: right;
+  margin: 5px 15px;
+}
+h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+h2:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+p {
+  font-size: 0.8rem;
+  margin: 5px 0px;
+  width: 80%;
+  color: hsl(240, 6%, 50%);
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  body {
+    background: linear-gradient(hsl(273, 75%, 66%, 0.5), hsl(240, 73%, 65%));
+  }
+  main {
+    background: none;
+    background-color: white;
+    width: 350px;
+    height: 550px;
+    border-radius: 25px;
+    position: relative;
+    top: 40px;
+  }
+  main::after {
+    content: "";
+    position: absolute;
+    top: -200px;
+    bottom: 400px;
+    left: 0;
+    right: 0;
+    background: url(../images/illustration-woman-online-mobile.svg) no-repeat
+        center 80px / 250px,
+      url(../images/bg-pattern-mobile.svg) no-repeat center 200px;
+    z-index: 1;
+  }
+
+  .acc-con {
+    left: 0;
+    top: 120px;
+    text-align: center;
+    width: 300px;
+    margin: 0px 25px;
+  }
+  .acc-div {
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+}

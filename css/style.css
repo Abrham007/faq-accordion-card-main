@@ -59,7 +59,8 @@ h2 {
   margin-bottom: 10px;
   font-weight: normal;
 }
-h2:hover {
+h2:hover,
+h2:focus {
   color: hsl(14, 88%, 65%);
   cursor: pointer;
 }
